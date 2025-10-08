@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Clickable Nav Bar</title>
   <style>
@@ -22,11 +22,16 @@
     nav a:hover {
       background-color: #A52A2A;
     }
- 
+    /* Centering content */
+    #content {
+      padding: 20px;
+    }
+    center {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-
 <nav>
   <a href="#home" id="homeLink">Poème</a>
   <a href="#about" id="aboutLink">Voyage</a>
@@ -36,7 +41,7 @@
 
 <div id="content" style="padding:20px;">
   <h1><center>BIENVENUE!</center></h1>
-  <p>jieiidejojowei</p>
+  <p>Bienvenue sur le site de mon voyage parfait !</p>
 </div>
 
 <script>
@@ -48,7 +53,23 @@
 
   document.getElementById('aboutLink').addEventListener('click', function(event) {
     event.preventDefault();
-    document.getElementById('content').innerHTML = '<h2>Mon voyage parfait</h2><p>MON VOYAGE PARFAIT.</p>';
+    document.getElementById('content').innerHTML = `
+      <h2>Mon voyage parfait</h2>
+      <center>
+        <ul>
+          <li><a class="active" href="#home"><h1><center>PARIS</center></h1></a></li>
+          <li><a class="#news" href="#home"><h2><b>Description</b></h2></a></li>
+          <p>Paris, capitale de la France, est une ville d'une beauté incomparable, célèbre pour ses monuments emblématiques comme la Tour Eiffel, le Louvre et la cathédrale Notre-Dame. Elle est au cœur de l'art, de la mode et de la gastronomie, attirant des visiteurs du monde entier avec ses rues pittoresques, ses cafés animés et ses musées de renommée mondiale. Paris, surnommée "la Ville Lumière", incarne l'élégance et l’histoire, alliant modernité et tradition dans un cadre urbain fascinant. Chaque quartier a son propre charme, de Montmartre et ses artistes à Saint-Germain-des-Prés, symbole du Paris intellectuel. </p>
+          <li><a class="#news" href="#home"><h2><b>Coût d'hébergement</b></h2></a></li>
+          <p>Le coût d'un voyage d'Ottawa à Paris dépend de plusieurs facteurs, mais en moyenne, un billet d'avion aller-retour en classe économique varie entre 600 et 1 200 CAD, avec des prix plus bas en basse saison et plus élevés en haute saison. Pour l'hébergement, un hôtel trois étoiles peut coûter environ 100 à 200 EUR par nuit, tandis que des options plus luxueuses, comme les hôtels cinq étoiles, commencent autour de 300 EUR par nuit. Pour des séjours plus économiques, les auberges de jeunesse ou les locations Airbnb offrent des prix plus abordables, entre 30 et 80 EUR par nuit. En tout, pour un séjour de sept jours, incluant le vol et un hébergement modéré, le coût total se situe entre 1 850 et 2 300 CAD, selon la période de réservation et les choix d’hébergement.</p>
+          <li><a class="#news" href="#home"><h2><b>Plat traditionnel</b></h2></a></li>
+          <p>Parmi les plats traditionnels les plus emblématiques de Paris et de la cuisine française, le coq au vin se distingue par sa richesse et sa profondeur de saveurs. Ce plat classique consiste en un coq mijoté dans du vin rouge, souvent du Bourgogne, avec des légumes, des champignons et des herbes, créant ainsi une harmonie parfaite entre les ingrédients. À côté de cela, le bœuf bourguignon, un ragoût de bœuf cuit lentement dans du vin rouge, les escargots de Bourgogne baignés dans un beurre à l'ail, ou encore la quiche Lorraine, une tarte salée savoureuse à base de crème et de lardons, sont des incontournables de la cuisine parisienne. Sans oublier le croque-monsieur, ce sandwich grillé au jambon et au fromage, souvent gratiné à la béchamel, ou la réconfortante soupe à l'oignon, servie chaude avec du fromage fondant et du pain croustillant. Ces plats illustrent parfaitement l’art de vivre à la française, où chaque recette raconte une histoire et révèle l'amour des bons produits.</p>
+          <li><a class="#news" href="#home"><h2><b>Endroits à visiter</b></h2></a></li>
+          <p>Paris est une ville regorgeant de sites incontournables et de lieux fascinants à découvrir. Parmi les monuments emblématiques, la Tour Eiffel, symbole de la ville, offre une vue spectaculaire sur la capitale, tandis que le Louvre, le plus grand musée du monde, abrite des œuvres d'art inestimables comme la Mona Lisa. La Cathédrale Notre-Dame, malgré les récents travaux de restauration, reste un chef-d'œuvre de l'architecture gothique, tout comme le Sacré-Cœur, situé sur la colline de Montmartre, qui offre une vue panoramique exceptionnelle. Les visiteurs ne manqueront pas de flâner le long des Champs-Élysées, de visiter le Musée d'Orsay, ou de découvrir le quartier animé du Marais. Pour une immersion dans l'histoire de Paris, les Catacombes et le Panthéon offrent des perspectives intrigantes, tandis que le Jardin du Luxembourg ou les Bateaux-Mouches sur la Seine permettent de profiter d'un cadre plus paisible. Chaque coin de la ville, du quartier historique du Quartier Latin aux lieux modernes comme le Centre Pompidou, invite à la découverte et à l'émerveillement. Paris est une ville où l’art, l’histoire et la culture se rencontrent à chaque coin de rue.</p>
+        <td><img src="https://s.francaisfacile.rfi.fr/media/display/b5f7677a-6368-11ee-a106-005056bfb2b6/w:1280/p:1x1/Tour-Eiffel.jpg" width="100%" /></td>
+      </center>
+      <link rel= "stylesheet" href= "styles.css">
+    `;
   });
 
   document.getElementById('servicesLink').addEventListener('click', function(event) {
@@ -64,5 +85,3 @@
 
 </body>
 </html>
-
-
