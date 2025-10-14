@@ -1,87 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clickable Nav Bar</title>
-  <style>
-    /* Simple styles for nav bar */
-    nav {
-      background-color: #808000;
-      overflow: hidden;
-    }
-    nav a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    nav a:hover {
-      background-color: #A52A2A;
-    }
-    /* Centering content */
-    #content {
-      padding: 20px;
-    }
-    center {
-      text-align: center;
-    }
-  </style>
+ <ul>
+  <li><a href="poème.html">Mon poème</a></li>
+  <li><a href="voyage.html">Voyage</a></li>
+  <li><a href="biographie.html">Biographie</a></li>
+</ul>
+<link rel= "stylesheet" href= "styles.css">
 </head>
-<body>
-<nav>
-  <a href="#home" id="homeLink">Poème</a>
-  <a href="#about" id="aboutLink">Voyage</a>
-  <a href="#services" id="servicesLink">Biographie</a>
-  <a href="#contact" id="contactLink">Mes animaux préférés</a>
-</nav>
+</body>
+</html>
 
-<div id="content" style="padding:20px;">
-  <h1><center>BIENVENUE!</center></h1>
-  <p>Bienvenue sur le site de mon voyage parfait !</p>
-</div>
+<!DOCTYPE html>
 
-<script>
-  // Add event listeners to nav links
-  document.getElementById('homeLink').addEventListener('click', function(event) {
-    event.preventDefault(); 
-    document.getElementById('content').innerHTML = '<h2>Poème</h2>Dear Basketball,<br>From the moment<br>  I started rolling my dad’s tube socks<br>And shooting imaginary<br>Game-winning shots<br> In the Great Western Forum<br>  I knew one thing was real:<br>  I fell in love with you.<br> A love so deep I gave you my all —<br> From my mind & body<br>To my spirit & soul.<br> As a six-year-old boy<br> Deeply in love with you<br> I never saw the end of the tunnel.<br>  I only saw myself<br>Running out of one.<br> And so I ran.<br>  I ran up and down every court<br>  After every loose ball for you.<br>    You asked for my hustle<br>   I gave you my heart<br>Because it came with so much more.<br>I played through the sweat and hurt<br> Not because challenge called me<br> But because YOU called me.<br>  I did everything for YOU<br>  Because that’s what you do<br>  When someone makes you feel as<br>  Alive as you’ve made me feel.<br>  You gave a six-year-old boy his Laker dream<br>And I’ll always love you for it.<br> But I can’t love you obsessively for much longer.<br>   This season is all I have left to give.<br> My heart can take the pounding<br>My mind can handle the grind<br> But my body knows it’s time to say goodbye.<br>  And that’s OK.<br> I’m ready to let you go.<br>I want you to know now<br>So we both can savor every moment we have left together.<br> The good and the bad.<br> We have given each other<br>All that we have.<br> And we both know, no matter what I do next<br> I’ll always be that kid<br> With the rolled up socks<br>Garbage can in the corner<br>  :05 seconds on the clock<br> Ball in my hands.<br> 5 … 4 … 3 … 2 … 1<br>  Love you always,<br>Kobe<p></p>';
-  });
+<html>
 
-  document.getElementById('aboutLink').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('content').innerHTML = `
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemple HTML</title>
+	</head>
+	
+	<body style="background-color: #9370DB;">
+	
+		<h1><center><b>POÈME</b></center></h1>
+		<img src=https://preview.redd.it/snc3t7brtaq51.jpg?width=640&crop=smart&auto=webp&s=1161a59b67f929272daa34aff022acf98db967e9 width="55%"/>
+	           <p>Dear Basketball,<br>From the moment<br>  I started rolling my dad’s tube socks<br>
+                And shooting imaginary<br>
+                Game-winning shots<br>
+                In the Great Western Forum<br>
+                I knew one thing was real:<br>
+                
+                I fell in love with you.<br>
+                
+                A love so deep I gave you my all —<br>
+                From my mind & body<br>
+                To my spirit & soul.<br>
+                
+                As a six-year-old boy<br>
+                Deeply in love with you<br>
+                I never saw the end of the tunnel.<br>
+                I only saw myself<br>
+                Running out of one.<br>
+                
+                And so I ran.<br>
+                I ran up and down every court<br>
+                After every loose ball for you.<br>
+                You asked for my hustle<br>
+                I gave you my heart<br>
+                Because it came with so much more.<br>
+                
+                I played through the sweat and hurt<br>
+                Not because challenge called me<br>
+                But because YOU called me.<br>
+                I did everything for YOU<br>
+                Because that’s what you do<br>
+                When someone makes you feel as<br>
+                Alive as you’ve made me feel.<br>
+                
+                You gave a six-year-old boy his Laker dream<br>
+                And I’ll always love you for it.<br>
+                But I can’t love you obsessively for much longer.<br>
+                This season is all I have left to give.<br>
+                My heart can take the pounding<br>
+                My mind can handle the grind<br>
+                But my body knows it’s time to say goodbye.<br>
+                
+                And that’s OK.<br>
+                I’m ready to let you go.<br>
+                I want you to know now<br>
+                So we both can savor every moment we have left together.<br>
+                The good and the bad.<br>
+                We have given each other<br>
+                All that we have.<br>
+                
+                And we both know, no matter what I do next<br>
+                I’ll always be that kid<br>
+                With the rolled up socks<br>
+                Garbage can in the corner<br>
+                :05 seconds on the clock<br>
+                Ball in my hands.<br>
+                5 … 4 … 3 … 2 … 1<br>
+                
+                Love you always,<br>
+                Kobe
+
+            </p>
+		<!-- Source= https://www.theplayerstribune.com/articles/dear-basketball par Kobe Bean Bryant -->
+	</body>
+	
+</html>
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemple HTML</title>
+	</head>
+	
+	<body style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg"); background-size: cover>
       <h2>Mon voyage parfait</h2>
       <center>
         <ul>
-          <li><a class="active" href="#home"><h1><center>PARIS</center></h1></a></li>
+          <li><a class="active" href="#home"><h1><center>ACRPOPROPOLE D'ATHÈNES</center></h1></a></li>
           <li><a class="#news" href="#home"><h2><b>Description</b></h2></a></li>
-          <p>Paris, capitale de la France, est une ville d'une beauté incomparable, célèbre pour ses monuments emblématiques comme la Tour Eiffel, le Louvre et la cathédrale Notre-Dame. Elle est au cœur de l'art, de la mode et de la gastronomie, attirant des visiteurs du monde entier avec ses rues pittoresques, ses cafés animés et ses musées de renommée mondiale. Paris, surnommée "la Ville Lumière", incarne l'élégance et l’histoire, alliant modernité et tradition dans un cadre urbain fascinant. Chaque quartier a son propre charme, de Montmartre et ses artistes à Saint-Germain-des-Prés, symbole du Paris intellectuel. </p>
+          <p>L'Acropole d'Athènes est un symbole emblématique de la civilisation grecque antique, située sur une colline rocheuse dominant la ville. Elle abrite des monuments architecturaux exceptionnels, construits principalement au Ve siècle avant J.-C., sous la direction de Périclès. Le Parthénon, temple dédié à la déesse Athéna, est le plus célèbre, avec ses sculptures raffinées et ses proportions parfaites. L'Érechthéion, remarquable pour son architecture asymétrique et son portique des Caryatides, et le Temple d'Athéna Nikè, symbole de la victoire, complètent ce site exceptionnel. Le Propylée, entrée monumentale, marque l'accès au sanctuaire. Ces monuments illustrent non seulement l'ingéniosité des architectes et sculpteurs grecs, mais aussi les idéaux de la démocratie athénienne et la grandeur de la culture antique. L'Acropole reste aujourd'hui un site incontournable et un patrimoine mondial de l'humanité. </p>
           <li><a class="#news" href="#home"><h2><b>Coût d'hébergement</b></h2></a></li>
-          <p>Le coût d'un voyage d'Ottawa à Paris dépend de plusieurs facteurs, mais en moyenne, un billet d'avion aller-retour en classe économique varie entre 600 et 1 200 CAD, avec des prix plus bas en basse saison et plus élevés en haute saison. Pour l'hébergement, un hôtel trois étoiles peut coûter environ 100 à 200 EUR par nuit, tandis que des options plus luxueuses, comme les hôtels cinq étoiles, commencent autour de 300 EUR par nuit. Pour des séjours plus économiques, les auberges de jeunesse ou les locations Airbnb offrent des prix plus abordables, entre 30 et 80 EUR par nuit. En tout, pour un séjour de sept jours, incluant le vol et un hébergement modéré, le coût total se situe entre 1 850 et 2 300 CAD, selon la période de réservation et les choix d’hébergement.</p>
+          <p>Le coût de l'hébergement à Athènes pour visiter l'Acropole varie selon le type de logement choisi. Les hôtels de luxe, comme le Grande Bretagne ou le Herodion, peuvent coûter entre 150 € et 300 € par nuit, voire plus pour une chambre avec vue sur l'Acropole. Les hôtels 3 à 4 étoiles dans des quartiers proches comme Plaka ou Monastiraki se situent généralement entre 70 € et 150 € par nuit. Pour un budget plus modeste, les auberges de jeunesse ou les hôtels économiques dans des zones comme Omonia ou Psiri offrent des prix entre 30 € et 70 € par nuit. Enfin, des appartements ou studios en location via des plateformes comme Airbnb peuvent commencer à partir de 40 € à 100 € par nuit, selon la localisation. Les tarifs tendent à être plus élevés durant la haute saison touristique (mai à septembre), tandis que l'hiver permet des prix plus abordables.</p>
           <li><a class="#news" href="#home"><h2><b>Plat traditionnel</b></h2></a></li>
-          <p>Parmi les plats traditionnels les plus emblématiques de Paris et de la cuisine française, le coq au vin se distingue par sa richesse et sa profondeur de saveurs. Ce plat classique consiste en un coq mijoté dans du vin rouge, souvent du Bourgogne, avec des légumes, des champignons et des herbes, créant ainsi une harmonie parfaite entre les ingrédients. À côté de cela, le bœuf bourguignon, un ragoût de bœuf cuit lentement dans du vin rouge, les escargots de Bourgogne baignés dans un beurre à l'ail, ou encore la quiche Lorraine, une tarte salée savoureuse à base de crème et de lardons, sont des incontournables de la cuisine parisienne. Sans oublier le croque-monsieur, ce sandwich grillé au jambon et au fromage, souvent gratiné à la béchamel, ou la réconfortante soupe à l'oignon, servie chaude avec du fromage fondant et du pain croustillant. Ces plats illustrent parfaitement l’art de vivre à la française, où chaque recette raconte une histoire et révèle l'amour des bons produits.</p>
-          <li><a class="#news" href="#home"><h2><b>Endroits à visiter</b></h2></a></li>
-          <p>Paris est une ville regorgeant de sites incontournables et de lieux fascinants à découvrir. Parmi les monuments emblématiques, la Tour Eiffel, symbole de la ville, offre une vue spectaculaire sur la capitale, tandis que le Louvre, le plus grand musée du monde, abrite des œuvres d'art inestimables comme la Mona Lisa. La Cathédrale Notre-Dame, malgré les récents travaux de restauration, reste un chef-d'œuvre de l'architecture gothique, tout comme le Sacré-Cœur, situé sur la colline de Montmartre, qui offre une vue panoramique exceptionnelle. Les visiteurs ne manqueront pas de flâner le long des Champs-Élysées, de visiter le Musée d'Orsay, ou de découvrir le quartier animé du Marais. Pour une immersion dans l'histoire de Paris, les Catacombes et le Panthéon offrent des perspectives intrigantes, tandis que le Jardin du Luxembourg ou les Bateaux-Mouches sur la Seine permettent de profiter d'un cadre plus paisible. Chaque coin de la ville, du quartier historique du Quartier Latin aux lieux modernes comme le Centre Pompidou, invite à la découverte et à l'émerveillement. Paris est une ville où l’art, l’histoire et la culture se rencontrent à chaque coin de rue.</p>
-        <td><img src="https://s.francaisfacile.rfi.fr/media/display/b5f7677a-6368-11ee-a106-005056bfb2b6/w:1280/p:1x1/Tour-Eiffel.jpg" width="100%" /></td>
+          <p>La cuisine grecque est riche en saveurs et en traditions, mettant en avant des ingrédients frais et locaux. Parmi les plats traditionnels les plus emblématiques, on trouve le moussaka, un gratin à base d'aubergines, de viande hachée (souvent d'agneau) et de béchamel. Le souvlaki, des brochettes de viande grillée (souvent du porc ou du poulet), est un autre incontournable, souvent servi avec du pain pita et des légumes. Le tzatziki, une sauce à base de yaourt, concombre, ail et huile d'olive, accompagne souvent ces plats. Le dolma, des feuilles de vigne farcies de riz, d'herbes et parfois de viande, et la spanakopita, une tourte à base de pâte filo et d'épinards, sont également des spécialités populaires. Ces plats, riches en arômes et en histoire, reflètent l'amour des Grecs pour les produits simples et le goût du partage.</p>
+          <img src= "https://www.196flavors.com/wp-content/uploads/2016/01/moussaka-4-FP.jpg" width ="100%" />
+          <li><a class="#news" href="#home"><h2><b>Histoire</b></h2></a></li>
+          <p>L'Acropole d'Athènes est un site archéologique majeur, symbole de la grandeur de la civilisation grecque antique. Perchée à 156 mètres d'altitude, elle fut le centre religieux et culturel d'Athènes, dédiée principalement à la déesse Athéna, la protectrice de la ville. Les monuments les plus célèbres, comme le Parthénon, le Temple d'Athéna Nikè, le Propylée et l'Érechthéion, furent construits au Ve siècle avant J.-C. sous la direction de Périclès, durant l'âge d'or d'Athènes. Ces édifices, conçus par des architectes et sculpteurs de génie comme Iktinos, Kallikrates et Phidias, incarnent la perfection de l'architecture grecque antique et témoignent de la puissance politique et religieuse d'Athènes. L'Acropole était non seulement un lieu de culte, mais aussi un centre de célébration des Panathénées, un festival religieux marquant la richesse culturelle et spirituelle de la cité. Classée au patrimoine mondial de l'UNESCO, l'Acropole continue de fasciner par son histoire, son art et son influence durable sur la civilisation occidentale.</p>
       </center>
       <link rel= "stylesheet" href= "styles.css">
     `;
   });
 
-  document.getElementById('servicesLink').addEventListener('click', function(event) {
+    document.getElementById('servicesLink').addEventListener('click', function(event) {
     event.preventDefault();
-    document.getElementById('content').innerHTML = '<h2>BIOGRAPHIE</h2><p>BIOGRAPHIE.</p>';
+    document.getElementById('content').innerHTML = `
+      <h2>BIOGRAPHIE</h2>
+      <p>BIOGRAPHIE.</p>
+      `;
   });
-
-  document.getElementById('contactLink').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('content').innerHTML = '<h2>Contact</h2><p>Contact information goes here.</p>';
-  });
-</script>
-
-</body>
-</html>
