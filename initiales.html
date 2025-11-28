@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quel est ton nom?</title>
+</head>
+
+
+<body>
+
+
+<h1><b>Entrez votre nom</b></h1>
+
+
+<label>Prénom :</label>
+<input type="text" id="prenom"><br><br>
+
+
+<label>Nom du milieu :</label>
+<input type="text" id="nomMilieu"><br><br>
+
+
+<label>Nom de famille :</label>
+<input type="text" id="nomFamille"><br><br>
+
+
+<h3>Résultat :</h3>
+<p id="resultat"></p>
+
+
+<button onclick="initiales()">Initiales</button>
+<button onclick="username()">Username</button>
+<button onclick="nomAuComplet()">Nom au complet</button>
+
+
+<script>
+
+
+function getValues() {
+    return {
+        prenom: document.getElementById("prenom").value,
+        nomMilieu: document.getElementById("nomMilieu").value,
+        nomFamille: document.getElementById("nomFamille").value
+    };
+}
+
+
+function initiales() {
+    let { prenom, nomMilieu, nomFamille } = getValues();
+    let res = prenom.charAt(0) + "." + nomMilieu.charAt(0) + "." + nomFamille.charAt(0) + ".";
+    document.getElementById("resultat").innerText = res;
+}
+
+
+function username() {
+    let { prenom, nomMilieu, nomFamille } = getValues();
+    let res = prenom.charAt(0).toLowerCase() + nomMilieu.charAt(0).toLowerCase() + nomFamille.toLowerCase();
+    document.getElementById("resultat").innerText = res;
+}
+
+
+function nomAuComplet() {
+    let { prenom, nomMilieu, nomFamille } = getValues();
+    let res = prenom + " " + nomMilieu + " " + nomFamille;
+    document.getElementById("resultat").innerText = res;
+}
+
+
+</script>
+
+
+</body>
+</html>
